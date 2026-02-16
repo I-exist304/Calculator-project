@@ -84,32 +84,18 @@ while True:
                 print("Please input valid numbers!")
                 continue
     elif x == '7':
-        x = input("How many digits would you like the average of? (2-10): ")
-#We ask him how many numbers they would like the average of from 1 to 10
-        if x == '2':
-            a = input("Enter the first number of this equation: ")
-            b = input("Enter the second number of this equation: ")
-            try:
-                int(a)
-                int(b)
-                ab = (a+b)/2
-                print("The average of", a, "and", b, "is", ab)
-            except ValueError:
-                print("Please input valid numbers!")
-                continue
-        elif x == '3':
-            a = input("Enter the first digit of this equation: ")
-            b = input("Enter the second number of this equation: ")
-            c = input("Enter the third number of this equation: ")
-            try:
-                a = int(a)
-                b = int(b)
-                c = int(c)
-                abc = (a+b+c)/2
-                print("The average of", int(a), + ",", b, "and", c, "is", abc)
-            except ValueError:
-                print("Please input valid numbers!")
-                continue
+        a = input("Enter the first digit of this equation: ")
+        b = input("Enter the second number of this equation: ")
+        c = input("Enter the third number of this equation: ")
+        try:
+            a = int(a)
+            b = int(b)
+            c = int(c)
+            abc = (a+b+c)/2
+            print("The average of", int(a), + ",", b, "and", c, "is", abc)
+        except ValueError:
+            print("Please input valid numbers!")
+            continue
 #Here is the restart code
     choice = input("Would you like to begin another calculation? (yes/no)")
     if choice == 'yes':
